@@ -1,0 +1,119 @@
+body{
+	margin: 0;
+	padding: 0;
+
+}
+.main{
+	width: 100%;
+	height: 100vh;
+	background-image: url(img/sun.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+.content{
+	color:#f27507;
+	position: absolute;
+	top: 45%;
+	left: 30%;
+	transform: translate(-50%);
+	border:10px dotted #e3aa24;
+	width: 500px;
+	height: 230px;
+	text-align: center;
+	
+	
+}
+button{
+	color:skyblue;
+	padding:10px 25px;
+	background: transparent;
+	border:1px solid #FFF;
+	border-radius: 20px;
+	cursor:pointer;
+	margin-right: 15px;
+}
+button:hover{
+	background: purple;
+}
+h1{
+	
+	-webkit-animation:glow 5s linear infinite;
+	letter-spacing: 5px;
+}
+h2{
+	letter-spacing: 2px;
+}
+p{
+	letter-spacing: 1px;
+}
+
+@keyframes glow
+{
+	0%,18%,20%,30%,50.1%,60%,75.1%,88%
+	{
+		color: blueviolet;
+	
+	}
+	18%,20.1%,30.1%,40%,52%,70%,80.1%,90%,92.1%,100%
+	{
+		color:skyblue;
+	}
+}
+
+nav{
+	background:linear-gradient(-45deg, rgb(35, 213, 171), rgb(62, 50, 168), rgb(238, 119, 82));
+	width:100%;
+	overflow: auto;
+	display: inline-flex;	
+}
+.menu{
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	width: 100%;
+	overflow: auto;
+}
+.option{
+	float: left;
+	display: block;
+	width:120px;
+	text-align: center;
+	color: white;
+	padding: 20px 10px;
+}
+.option:hover{
+	background:skyblue;
+	color: black;
+	cursor:pointer;
+}
+.sites img{
+	width:45px;
+	margin: 5px ;
+	cursor: pointer;
+
+}
+.sites{
+	letter-spacing: 10px;
+	float: right;
+	padding-right: 20px;
+}
+.picture img{
+	height: 80vh;
+	clip-path: circle();
+	
+}
+.picture{
+	float: right;
+	padding-top: 80px;
+	padding-right: 50px;
+
+}
+@media screen and (max-width:500px;){
+	body{
+		background: red;
+	}
+
+
+	
