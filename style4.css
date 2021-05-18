@@ -1,0 +1,115 @@
+body{
+	margin: 0;
+	padding: 0;
+
+}
+.main{
+	width: 100%;
+	height: 100vh;
+	background-image: url(img/sun.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;	
+}
+.content{
+	position: relative;
+	width: 80%;
+	height:90%;
+	top:0.5%;
+	left:10%;
+	background:white;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.left{
+	position: relative;
+	background-color: skyblue;
+	padding: 40px;
+}
+.right{
+	position: relative;
+	background-color: white;
+	padding: 40px;
+}
+.image img{
+	height: 40vh;
+	clip-path: circle();	
+}
+.profile{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+h1{
+	color: black;
+	font-size: 1.5em;
+	margin-top: 20px;
+	font-weight: 600;
+	line-height: 1.4em;
+}
+.text img{
+	width:30px;
+	height: 20px;
+}
+ul{
+	display: inline;
+}
+h2{
+	letter-spacing: 2px;
+	color: purple;
+}
+p{
+	font-size: 20px;
+}
+.Year_Education{
+	width: 250px;
+}
+.box{
+	display:flex;
+	justify-content: space-between;
+}
+nav{
+	background:linear-gradient(-45deg, rgb(35, 213, 171), rgb(62, 50, 168), rgb(238, 119, 82));
+	width:100%;
+	overflow: auto;
+	display: inline-flex;
+
+}
+.menu{
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	width: 100%;
+	overflow: auto;
+}
+.option{
+	float: left;
+	display: block;
+	width:120px;
+	text-align: center;
+	color: white;
+	padding: 20px 10px;
+}
+.option:hover{
+	background:skyblue;
+	color: black;
+	cursor:pointer;
+}
+.sites img{
+	width:45px;
+	margin: 5px ;
+	cursor: pointer;
+
+}
+.sites{
+	letter-spacing: 10px;
+	float: right;
+	padding-right: 20px;
+}
+a{
+	color: white;
+	
+}

@@ -66,6 +66,9 @@ h1{
 	color: black;
 	text-align: center;
 }
+a{
+	color: white;
+}
 @media screen and (max-width:800px;){
 	body{
 		background: red;
