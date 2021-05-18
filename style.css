@@ -75,7 +75,7 @@ nav{
 	width: 100%;
 	overflow: auto;
 }
-.option{
+a{
 	float: left;
 	display: block;
 	width:120px;
@@ -114,6 +114,7 @@ nav{
 	body{
 		background: black;
 	}
+}
 
 
 	
