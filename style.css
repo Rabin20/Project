@@ -83,7 +83,7 @@ a{
 	color: white;
 	padding: 20px 10px;
 }
-.option:hover{
+a:hover{
 	background:skyblue;
 	color: black;
 	cursor:pointer;
