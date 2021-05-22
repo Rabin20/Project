@@ -119,6 +119,7 @@ a{
 	width: 35px;
 	height: 30px;
 	margin: 20px 3.5px 8px 20px;
+	display: none;
 	cursor: pointer;
 }
 .line{
@@ -276,11 +277,24 @@ h5{
 	left:10%;
 	background:#FCEACE;
 }
-/*@media screen and (max-width:800px;){
-	body{
-		background: black;
+@media(max-width: 800px){
+	nav .menu{
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: white;
+		transition: top 1s ease;
+		display: none;
 	}
-}
-*/
+	nav .bar{
+		display: block;
+	}
+
 
 	
