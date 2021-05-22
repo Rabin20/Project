@@ -15,8 +15,8 @@ body{
 .content{
 	color:#f27507;
 	position: absolute;
-	top: 45%;
-	left: 30%;
+	top: 35%;
+	left: 25%;
 	transform: translate(-50%);
 	border:10px dotted #e3aa24;
 	width: 500px;
@@ -42,10 +42,11 @@ h1{
 	-webkit-animation:glow 5s linear infinite;
 	letter-spacing: 5px;
 }
-h2{
-	letter-spacing: 2px;
-}
 p{
+	letter-spacing: 2px;
+	font-size: 25px;
+}
+small{
 	letter-spacing: 1px;
 }
 
@@ -75,7 +76,7 @@ nav{
 	width: 100%;
 	overflow: auto;
 }
-a{
+.option{
 	float: left;
 	display: block;
 	width:120px;
@@ -83,10 +84,13 @@ a{
 	color: white;
 	padding: 20px 10px;
 }
-a:hover{
+.option:hover{
 	background:skyblue;
 	color: black;
 	cursor:pointer;
+}
+a{
+	color: white;
 }
 .sites img{
 	width:45px;
@@ -100,21 +104,183 @@ a:hover{
 	padding-right: 20px;
 }
 .picture img{
-	height: 80vh;
+	height: 60vh;
 	clip-path: circle();
 	
 }
 .picture{
-	float: right;
-	padding-top: 80px;
-	padding-right: 50px;
+	display: flex;
+	flex-direction: row;
+	padding-top: 7%;
+	padding-left: 54%;
 
 }
-@media screen and (max-width:800px;){
+.bar{
+	width: 35px;
+	height: 30px;
+	margin: 20px 3.5px 8px 20px;
+	cursor: pointer;
+}
+.line{
+	height: 5px;
+	width: 100%;
+	background-color: #b81568;
+	display: block;
+	border-radius: 5px;
+}
+#line1{
+	transform: translateY(-4px);
+}
+#line3{
+	transform: translateY(4px);
+}
+.field{
+	width: 450px;
+	background-color:#FF8484;
+	box-shadow:0 0 20px 0 #999;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+form{
+	margin: 20px;
+
+}
+.info{
+	width: 400px;
+	height: 30px;
+	margin-left: 0px;
+	border:1px solid#777;
+	border-radius: 14px;
+	outline: none;
+}
+textarea{
+	height: 150px;
+	width:400px;
+}
+.socialsites{
+	width: 80px;
+	text-align: center;
+	position: absolute;
+	top:50%;
+	left:96%;
+	transform: translateY(-50%);
+
+}
+.socialsites img{
+	width: 45px;
+	margin: 5px auto;
+	cursor: pointer;
+
+}
+
+.gallery{
+	margin:90px;
+	border: solid white;
+	float: left;
+	width:390px;
+	background-color: white;
+	cursor: pointer;
+	animation: animate 3s linear;
+}
+@keyframes animate{
+	100%{
+		transform: rotateZ(300deg);
+	}
+}
+.gallery img{
+	width: 100%;
+	height:300px;
+}
+h3{
+	color: black;
+	text-align: center;
+}
+.content1{
+	position: relative;
+	width: 70%;
+	height:60%;
+	top:0.5%;
+	left:3%;
+	background:white;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+.leftside{
+	position: relative;
+	background-color: skyblue;
+	padding: 40px;
+}
+.rightside{
+	position: relative;
+	background-color: white;
+	padding: 40px;
+}
+.image img{
+	height: 40vh;
+	clip-path: circle();	
+}
+.profile{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+.text img{
+	width:30px;
+	height: 20px;
+}
+ul{
+	display: inline;
+}
+h6{
+	color: black;
+	font-size: 1.5em;
+	margin-top: 20px;
+	font-weight: 600;
+	line-height: 1.4em;
+}
+h2{
+	letter-spacing: 2px;
+	color: purple;
+}
+.about p{
+	font-size: 20px;
+}
+.Year_Education{
+	width: 250px;
+}
+h5{
+	color:red;
+}
+.box{
+	display:flex;
+	justify-content: space-between;
+}
+.main1{
+	width: 100%;
+	height: 150vh;
+	background-image: url(img/sun.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+.content3{
+	position: relative;
+	width: 80%;
+	height:90%;
+	top:0.5%;
+	left:10%;
+	background:#FCEACE;
+}
+/*@media screen and (max-width:800px;){
 	body{
 		background: black;
 	}
 }
-
+*/
 
 	
