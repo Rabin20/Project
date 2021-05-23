@@ -229,9 +229,9 @@ h3{
 	text-align: center;
 	border-bottom: 1px solid white;
 }
-.text img{
-	width:30px;
-	height: 20px;
+.contact img{
+	width:25px;
+	height: 15px;
 }
 ul{
 	display: inline;
@@ -239,8 +239,8 @@ ul{
 h6{
 	color: black;
 	font-size: 1.5em;
-	margin-top: 20px;
-	font-weight: 600;
+	margin-top: 5px;
+	font-weight: 500px;
 	line-height: 1.4em;
 }
 h2{
