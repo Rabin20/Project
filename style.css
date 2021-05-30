@@ -19,11 +19,9 @@ body{
 	left: 25%;
 	transform: translate(-50%);
 	border:10px dotted #e3aa24;
-	width: 500px;
+	width: 450px;
 	height: 230px;
 	text-align: center;
-	
-	
 }
 button{
 	color:skyblue;
@@ -68,6 +66,7 @@ nav{
 	width:100%;
 	overflow: auto;
 	display: inline-flex;	
+	padding: 5px 15px;
 }
 .menu{
 	margin:0px;
@@ -115,26 +114,12 @@ a{
 
 }
 .bar{
-	width: 35px;
-	height: 30px;
-	margin: 20px 3.5px 8px 20px;
+	font-size: 1.5rem;
+	color: white;
 	display: none;
 	cursor: pointer;
+	z-index: 100;
 }
-.line{
-	height: 5px;
-	width: 100%;
-	background-color: #b81568;
-	display: block;
-	border-radius: 5px;
-}
-#line1{
-	transform: translateY(-4px);
-}
-#line3{
-	transform: translateY(4px);
-}
-/*This is For Contact*/
 .field{
 	width: 450px;
 	background-color:#FF8484;
@@ -177,10 +162,13 @@ textarea{
 }
 /*This is for Portfolio*/
 .gallery{
-	margin:70px;
+	margin:5px;
+	margin-top: 30px;
+	margin-left:30px;
 	border: solid white;
-	float: left;
-	width:350px;
+	display: inline-flex;
+	flex-direction: row;
+	width:20%;
 	background-color: white;
 	cursor: pointer;
 	animation: animate 3s linear;
@@ -195,7 +183,7 @@ textarea{
 }
 .gallery img{
 	width: 100%;
-	height:300px;
+	height:250px;
 }
 h3{
 	color: black;
@@ -203,23 +191,26 @@ h3{
 }
 /*This is for CV*/
 .content1{ 
-	position: relative;
-	width: 70%;
-	height:60%;
-	top:0.5%;
-	left:5%;
+	position: absolute;
+	width: 100%;
+	min-height:100px;
+	max-width: 1000px;
+	margin-top:1%;
+	margin-left:5%;
 	display: grid;
-	grid-template-columns: 1fr 2.5fr;
+	grid-template-columns: 1fr 2fr;
 }
 .leftside{
 	position: relative;
 	background-color: skyblue;
 	padding: 20px;
+	/*width: 30%;*/
 }
 .rightside{
 	position: relative;
 	background-color: white;
 	padding: 10px;
+	/*width: 70%;*/
 }
 .image img{
 	height: 40vh;
@@ -275,7 +266,7 @@ h5{
 .content3{
 	position: relative;
 	width: 80%;
-	height:4000px;
+	height:4500px;
 	top:0.5%;
 	left:8%;
 	padding:20px;
@@ -292,18 +283,28 @@ header{
 span{
 	font-size: 1.5em;
 }
+@media screen and (max-width: 900px){
+	.content{
+		left: 50%;
+		top: 50%;
+		height: 170px;
+		width: 260px !important;
+		font-size: 13px;
 
+	}
+	.content p{
+	letter-spacing: 2px;
+	font-size: 15px;
+	}
+	.picture img{
+		height: 70% !important;
+		width: 70% !important;
+	}
+	.picture{
+		padding-top: 0%;
+		padding-left: 36%;
 
-@media(max-width: 800px){
-	/*.main{
-		width: 100%;
-		height: 130vh;
-		background-image: url(img/sun.jpg);
-		background-size: cover;
-		background-position: center;
-		position: relative;
-		overflow: hidden;
-	}*/
+	}
 	nav .menu{
 		height: 100vh;
 		position: fixed;
@@ -314,34 +315,55 @@ span{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background: white;
+		background: black;
 		transition: top 1s ease;
 		display: none;
+	}
+	nav .menu.show{
+		display: flex;
 	}
 	nav .bar{
 		display: block;
 	}
+	.gallery{
+		margin-right: 10px;
+		margin-top: 5px;
+		width: 30% !important;
+	}
+	.gallery img{
+		height: 300px;
+	}
+	/*END FOR HOME PAGE*/
+	.field{
+		width: 80% !important;
+		left: 45%;
+	}
+	.info{
+		width: 100% !important;
+		height: 30px;
+		margin-left: 0px;
+		border:1px solid#777;
+		border-radius: 14px;
+		outline: none;
+	}
+	textarea{
+		height: 150px;
+		width:100% !important;
+	}
+	.socialsites img {
+		width: 70% !important;
+	}
 	.content1{
-		position: relative;
-		width: 5%;
-		height:10%;
-		top:0.5%;
-		left:1%;
-		display: grid;
-		grid-template-columns:auto;
-
+		margin: 10px;
+		grid-template-columns: repeat(1, 1fr);
+		/*margin-right: 3%;
+		margin-left: 3%;*/
+		
 	}
 	.leftside{
-		padding: 2px;
+		width: 100%;
 	}
 	.rightside{
-		padding: 2px;
+		width: 100%;
 	}
-	.image img{
-	height: 20vh;
-	clip-path: circle(44%);
-	}	
 }
-
-
-	
