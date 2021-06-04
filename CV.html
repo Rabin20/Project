@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+	<meta charset="utf-8">
 	<title>CV</title>
-	<link rel="stylesheet" type="text/css"
+		<link rel="stylesheet" type="text/css"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width,initial scale=1.0">
 </head>
 <body>
-	<div class="main">
+	<div class="mainny">
 		<nav>
-			<div class="bar" onclick=showNav()>
+			<div class="bar" onclick=icon()>
 				<i class="fas fa-bars"></i>
 			</div>
 			<div class="menu">
@@ -20,50 +21,69 @@
 	        	<div class="option"><a href = "CV.html">CV</a></div>
 	        	<div class="option"><a href="Report.html">REPORT</a></div>
 	        	<div class="sites">
-        			<img src="img/facebook.png" alt="facebook img">
-        			<img src="img/instragram.png" alt="instragram img">
-        			<img src="img/twitter.png" alt="twitter img">
+        			<a href="https://www.facebook.com/rabin.joshi.1614/"><img src="img/facebook.png" alt="Facebook image"></a>
+        			<a href="https://www.instagram.com/joshirabin11/"><img src="img/instragram.png" alt="Instagram image"></a>
+        			<a href="https://twitter.com/RabinJoshi2021"><img src="img/twitter.png"  alt="twitter image"></a>
         		</div>
         	</div>
         </nav>
-		<div class="content1">
-			<div class="leftside">
+		<div class="container">
+			<div class="left">
 				<div class="profile">
 					<div class="image">
-						<img src="img/pic.jpg" alt="Personal image">
+						<img src="img/pic.jpg" alt="profile">
 					</div>
-					<h6>Rabin Joshi<br>Software Developer</h6>
+					<h2>Rabin Joshi<br><span>software developer</span></h2>
 				</div>
 				<div class="contact">
-					<h2>Contact info</h2>
+					<h3 class="title"> Contact info</h3>
 					<ul>
-						<li><img src="img/call.jpg" alt="Contact logo">+9779860668441</li>
-						<li><img src="img/mail.jpg" alt="Email logo">joshihero15@gmail.com</li>
+						<li>
+							<span class="side_icon"><img src="img/call.jpg"></span>
+							<span class="text">+977-9860668441</span>
+						</li>
+						<li>
+							<span class="side_icon"><img src="img/mail.jpg"></span>
+							<span class="text">joshihero15@gmail.com</span>
+						</li>
+				</div>
+				<div class="contact-info">
+					<h3 class="title">language</h3>
+					<ul>
+						<li>
+							<span class="text">English</span>
+						</li>
+						<li>
+							<span class="text">Nepali</span>
+						</li>
+						<li>
+							<span class="text">Hindi</span>
+						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="rightside">
+			<div class="right">
 				<div class="about">
-					<h2>Profile</h2>
+					<h4>Profile</h4>
 					<p>I am responsible student studying Software Development at University of Northampton. As a part of my studies I am keen to get some work experience.I am a very organized person who likes to be kept busy. I am eager to learn new skills. I am enthusiastic and like to work hard to ensure that I am successful in everything that I do.</p>
-					<h2>Education</h2>
+					<h4>Education</h4>
 					<div class="box">
 						<div class="Year_Education">
-							<h4>2021-present</h4>
+							<h6>2021-present</h6>
 							<h5>NAMI COLLEGE(Bachelor)</h5>
 						</div>
 						<div class="Year_Education">
-							<h4>2018-2020</h4>
+							<h6>2018-2020</h6>
 							<h5>VISWA NIKETAN(Grade12)</h5>
 						</div>
 						<div class="Year_Education">
-							<h4>2005-2018</h4>
+							<h6>2005-2018</h6>
 							<h5>ARUNIMA SCHOOL(SEE)</h5>
 						</div>
 					</div>
 				</div>
 				<div class="skill details">
-					<h2>Skill</h2>
+					<h4>Skill</h4>
 					<ul class="box">
 						<li>HTML</li>
 						<li>Database</li>
@@ -72,24 +92,22 @@
 					</ul>
 				</div>
 				<div class="Interest details">
-					<h2>Interest</h2>
+					<h4>Interest</h4>
 					<ul class="box">
 						<li>Playing Football</li>
-						<li>Reading</li>
 						<li>Gaming</li>
-						<li>Listening Music</li>
+						<li> Music</li>
 					</ul>
-				</div>
 			</div>
 		</div>
 	</div>
-	<script>
-		function showNav()
+<script>
+		function icon()
 		{
-			console.log("hey")
+			console.log("baby")
 			const mainMenu = document.querySelector(".menu")
 			mainMenu.classList.toggle("show")
 		}
-	</script>
+</script>
 </body>
 </html>
